@@ -1,12 +1,18 @@
 License Plate Library
 ======================
 
+models.ocr module
+-----------------
 
-license\_recog.detector module
-------------------------------
-
-.. automodule:: license_recog.detector
+.. automodule:: license_recognition.models.ocr
    :members:
    :undoc-members:
    :show-inheritance:
 
+models.wpod module
+------------------
+
+.. automodule:: license_recognition.models.wpod
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -4,7 +4,7 @@ Face Recognition Library
 Arcnet Model
 --------------------
 
-.. automodule:: models.arcnet
+.. automodule:: face_recognition.models.arcnet
    :members:
    :undoc-members:
    :show-inheritance:
@@ -12,7 +12,7 @@ Arcnet Model
 Retina Face Model
 --------------------
 
-.. automodule:: models.retina
+.. automodule:: face_recognition.models.retina
    :members:
    :undoc-members:
    :show-inheritance:

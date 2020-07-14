@@ -7,12 +7,12 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>models.retina &mdash; Face Recognition 0.1.6 documentation</title>
+  <title>face_recognition.models.retina &mdash; Face Recognition 0.1.6 documentation</title>
   
 
   
-  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
 
   
   
@@ -21,21 +21,21 @@
 
   
   <!--[if lt IE 9]>
-    <script src="../../_static/js/html5shiv.min.js"></script>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
     
-      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/language_data.js"></script>
+      <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/language_data.js"></script>
     
-    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
 
     
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" /> 
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -49,7 +49,7 @@
           
 
           
-            <a href="../../index.html" class="icon icon-home" alt="Documentation Home"> Face Recognition
+            <a href="../../../index.html" class="icon icon-home" alt="Documentation Home"> Face Recognition
           
 
           
@@ -62,7 +62,7 @@
 
           
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
@@ -82,8 +82,8 @@
             
               <p class="caption"><span class="caption-text">Package Reference</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../pkg/license_recog.html">License Plate Library</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../pkg/face_recognition.html">Face Recognition Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../pkg/license_recog.html">License Plate Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../pkg/face_recognition.html">Face Recognition Library</a></li>
 </ul>
 
             
@@ -99,7 +99,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">Face Recognition</a>
+          <a href="../../../index.html">Face Recognition</a>
         
       </nav>
 
@@ -128,11 +128,11 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
         
-          <li><a href="../index.html">Module code</a> &raquo;</li>
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
         
-      <li>models.retina</li>
+      <li>face_recognition.models.retina</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -147,7 +147,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <h1>Source code for models.retina</h1><div class="highlight"><pre>
+  <h1>Source code for face_recognition.models.retina</h1><div class="highlight"><pre>
 <span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">division</span><span class="p">,</span> <span class="n">absolute_import</span>
 
 <span class="kn">import</span> <span class="nn">os</span>
@@ -157,8 +157,8 @@
 <span class="kn">import</span> <span class="nn">mxnet</span> <span class="k">as</span> <span class="nn">mx</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">from</span> <span class="nn">mxnet</span> <span class="kn">import</span> <span class="n">ndarray</span> <span class="k">as</span> <span class="n">nd</span>
-<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;..&quot;</span><span class="p">)</span>
-<span class="kn">from</span> <span class="nn">utils.tools</span> <span class="kn">import</span> <span class="n">download_url</span>
+
+<span class="kn">from</span> <span class="nn">face_recognition.utils.tools</span> <span class="kn">import</span> <span class="n">download_url</span>
 
 <span class="k">try</span><span class="p">:</span>
     <span class="kn">from</span> <span class="nn">rcnn.processing.bbox_transform</span> <span class="kn">import</span> <span class="n">clip_boxes</span>
@@ -180,7 +180,7 @@
     <span class="kn">from</span> <span class="nn">rcnn.processing.generate_anchor</span> <span class="kn">import</span> <span class="n">generate_anchors_fpn</span><span class="p">,</span> <span class="n">anchors_plane</span>
     <span class="kn">from</span> <span class="nn">rcnn.processing.nms</span> <span class="kn">import</span> <span class="n">gpu_nms_wrapper</span><span class="p">,</span> <span class="n">cpu_nms_wrapper</span>
 
-<div class="viewcode-block" id="RetinaFace"><a class="viewcode-back" href="../../pkg/face_recognition.html#models.retina.RetinaFace">[docs]</a><span class="k">class</span> <span class="nc">RetinaFace</span><span class="p">:</span>
+<div class="viewcode-block" id="RetinaFace"><a class="viewcode-back" href="../../../pkg/face_recognition.html#face_recognition.models.retina.RetinaFace">[docs]</a><span class="k">class</span> <span class="nc">RetinaFace</span><span class="p">:</span>
     <span class="sd">&quot;&quot;&quot;Retina Face Model</span>
 
 <span class="sd">    Args:</span>
@@ -316,7 +316,7 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">buff_tensor</span> <span class="o">=</span> <span class="kc">None</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">buff_tensor_is_None</span> <span class="o">=</span> <span class="kc">True</span>
 
-<div class="viewcode-block" id="RetinaFace.detect_fast"><a class="viewcode-back" href="../../pkg/face_recognition.html#models.retina.RetinaFace.detect_fast">[docs]</a>    <span class="k">def</span> <span class="nf">detect_fast</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">net_data</span><span class="p">,</span> <span class="n">detect_im_shape</span><span class="p">,</span> <span class="n">threshold</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">scales</span><span class="o">=</span><span class="p">[</span><span class="mf">1.0</span><span class="p">],</span> <span class="n">do_flip</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+<div class="viewcode-block" id="RetinaFace.detect_fast"><a class="viewcode-back" href="../../../pkg/face_recognition.html#face_recognition.models.retina.RetinaFace.detect_fast">[docs]</a>    <span class="k">def</span> <span class="nf">detect_fast</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">net_data</span><span class="p">,</span> <span class="n">detect_im_shape</span><span class="p">,</span> <span class="n">threshold</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">scales</span><span class="o">=</span><span class="p">[</span><span class="mf">1.0</span><span class="p">],</span> <span class="n">do_flip</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Detect Fast</span>
 
 <span class="sd">        Args:</span>
@@ -489,7 +489,7 @@
         <span class="k">return</span> <span class="n">tensor</span>
 
 
-<div class="viewcode-block" id="RetinaFace.bbox_pred"><a class="viewcode-back" href="../../pkg/face_recognition.html#models.retina.RetinaFace.bbox_pred">[docs]</a>    <span class="nd">@staticmethod</span>
+<div class="viewcode-block" id="RetinaFace.bbox_pred"><a class="viewcode-back" href="../../../pkg/face_recognition.html#face_recognition.models.retina.RetinaFace.bbox_pred">[docs]</a>    <span class="nd">@staticmethod</span>
     <span class="k">def</span> <span class="nf">bbox_pred</span><span class="p">(</span><span class="n">boxes</span><span class="p">,</span> <span class="n">box_deltas</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Transform the set of class-agnostic boxes into class-specific boxes</span>
@@ -532,7 +532,7 @@
 
         <span class="k">return</span> <span class="n">pred_boxes</span></div>
 
-<div class="viewcode-block" id="RetinaFace.landmark_pred"><a class="viewcode-back" href="../../pkg/face_recognition.html#models.retina.RetinaFace.landmark_pred">[docs]</a>    <span class="nd">@staticmethod</span>
+<div class="viewcode-block" id="RetinaFace.landmark_pred"><a class="viewcode-back" href="../../../pkg/face_recognition.html#face_recognition.models.retina.RetinaFace.landmark_pred">[docs]</a>    <span class="nd">@staticmethod</span>
     <span class="k">def</span> <span class="nf">landmark_pred</span><span class="p">(</span><span class="n">boxes</span><span class="p">,</span> <span class="n">landmark_deltas</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Landmark prediction</span>
 
@@ -557,7 +557,7 @@
             <span class="n">pred</span><span class="p">[:,</span> <span class="n">i</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">landmark_deltas</span><span class="p">[:,</span> <span class="n">i</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">heights</span> <span class="o">+</span> <span class="n">ctr_y</span>
         <span class="k">return</span> <span class="n">pred</span></div>
 
-<div class="viewcode-block" id="RetinaFace.bbox_vote"><a class="viewcode-back" href="../../pkg/face_recognition.html#models.retina.RetinaFace.bbox_vote">[docs]</a>    <span class="k">def</span> <span class="nf">bbox_vote</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">det</span><span class="p">):</span>
+<div class="viewcode-block" id="RetinaFace.bbox_vote"><a class="viewcode-back" href="../../../pkg/face_recognition.html#face_recognition.models.retina.RetinaFace.bbox_vote">[docs]</a>    <span class="k">def</span> <span class="nf">bbox_vote</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">det</span><span class="p">):</span>
 
         <span class="k">if</span> <span class="n">det</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
             <span class="n">dets</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mf">0.002</span><span class="p">]])</span>

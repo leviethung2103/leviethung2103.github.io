@@ -85,7 +85,8 @@
               <p class="caption"><span class="caption-text">Package Reference</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">License Plate Library</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#module-license_recog.detector">license_recog.detector module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-license_recognition.models.ocr">models.ocr module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-license_recognition.models.wpod">models.wpod module</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="face_recognition.html">Face Recognition Library</a></li>
@@ -156,17 +157,17 @@
             
   <div class="section" id="license-plate-library">
 <h1>License Plate Library<a class="headerlink" href="#license-plate-library" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="module-license_recog.detector">
-<span id="license-recog-detector-module"></span><h2>license_recog.detector module<a class="headerlink" href="#module-license_recog.detector" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-license_recognition.models.ocr">
+<span id="models-ocr-module"></span><h2>models.ocr module<a class="headerlink" href="#module-license_recognition.models.ocr" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
-<dt id="license_recog.detector.LP_Detector">
-<em class="property">class </em><code class="sig-prename descclassname">license_recog.detector.</code><code class="sig-name descname">LP_Detector</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">config</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/license_recog/detector.html#LP_Detector"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#license_recog.detector.LP_Detector" title="Permalink to this definition">¶</a></dt>
+<dt id="license_recognition.models.ocr.OCR">
+<em class="property">class </em><code class="sig-prename descclassname">license_recognition.models.ocr.</code><code class="sig-name descname">OCR</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">config</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/license_recognition/models/ocr.html#OCR"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#license_recognition.models.ocr.OCR" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<p>License Plate Detector</p>
+<p>OCR Model</p>
 <dl class="py method">
-<dt id="license_recog.detector.LP_Detector.get_number">
-<code class="sig-name descname">get_number</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">image</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/license_recog/detector.html#LP_Detector.get_number"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#license_recog.detector.LP_Detector.get_number" title="Permalink to this definition">¶</a></dt>
-<dd><p>Get the string number of plate</p>
+<dt id="license_recognition.models.ocr.OCR.get_number">
+<code class="sig-name descname">get_number</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">image</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/license_recognition/models/ocr.html#OCR.get_number"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#license_recognition.models.ocr.OCR.get_number" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the string number from license plate</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>image</strong> (<em>np.array</em>) – plate image after processing</p>
@@ -181,9 +182,32 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="license_recog.detector.LP_Detector.get_plate">
-<code class="sig-name descname">get_plate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">input</span></em>, <em class="sig-param"><span class="n">resized</span></em>, <em class="sig-param"><span class="n">origin</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/license_recog/detector.html#LP_Detector.get_plate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#license_recog.detector.LP_Detector.get_plate" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="field-list simple">
+<dt id="license_recognition.models.ocr.OCR.load_classes">
+<code class="sig-name descname">load_classes</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/license_recognition/models/ocr.html#OCR.load_classes"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#license_recognition.models.ocr.OCR.load_classes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load class names</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="license_recognition.models.ocr.OCR.load_model_ocr">
+<code class="sig-name descname">load_model_ocr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/license_recognition/models/ocr.html#OCR.load_model_ocr"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#license_recognition.models.ocr.OCR.load_model_ocr" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load orc model</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-license_recognition.models.wpod">
+<span id="models-wpod-module"></span><h2>models.wpod module<a class="headerlink" href="#module-license_recognition.models.wpod" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="license_recognition.models.wpod.WPOD">
+<em class="property">class </em><code class="sig-prename descclassname">license_recognition.models.wpod.</code><code class="sig-name descname">WPOD</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">config</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/license_recognition/models/wpod.html#WPOD"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#license_recognition.models.wpod.WPOD" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>WPOD Model</p>
+<dl class="py method">
+<dt id="license_recognition.models.wpod.WPOD.get_plate">
+<code class="sig-name descname">get_plate</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">input</span></em>, <em class="sig-param"><span class="n">resized</span></em>, <em class="sig-param"><span class="n">origin</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/license_recognition/models/wpod.html#WPOD.get_plate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#license_recognition.models.wpod.WPOD.get_plate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the license plate from image</p>
+<dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>input</strong> (<em>np.array</em>) – the image</p></li>
@@ -196,14 +220,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="license_recog.detector.LP_Detector.load_model_ocr">
-<code class="sig-name descname">load_model_ocr</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/license_recog/detector.html#LP_Detector.load_model_ocr"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#license_recog.detector.LP_Detector.load_model_ocr" title="Permalink to this definition">¶</a></dt>
-<dd><p>Load orc model</p>
-</dd></dl>
-
-<dl class="py method">
-<dt id="license_recog.detector.LP_Detector.load_model_plate">
-<code class="sig-name descname">load_model_plate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/license_recog/detector.html#LP_Detector.load_model_plate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#license_recog.detector.LP_Detector.load_model_plate" title="Permalink to this definition">¶</a></dt>
+<dt id="license_recognition.models.wpod.WPOD.load_model_plate">
+<code class="sig-name descname">load_model_plate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/license_recognition/models/wpod.html#WPOD.load_model_plate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#license_recognition.models.wpod.WPOD.load_model_plate" title="Permalink to this definition">¶</a></dt>
 <dd><p>Load plate detection model</p>
 </dd></dl>
 

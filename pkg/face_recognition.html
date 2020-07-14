@@ -85,8 +85,8 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="license_recog.html">License Plate Library</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Face Recognition Library</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#module-models.arcnet">Arcnet Model</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-models.retina">Retina Face Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-face_recognition.models.arcnet">Arcnet Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-face_recognition.models.retina">Retina Face Model</a></li>
 </ul>
 </li>
 </ul>
@@ -156,19 +156,19 @@
             
   <div class="section" id="face-recognition-library">
 <h1>Face Recognition Library<a class="headerlink" href="#face-recognition-library" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="module-models.arcnet">
-<span id="arcnet-model"></span><h2>Arcnet Model<a class="headerlink" href="#module-models.arcnet" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-face_recognition.models.arcnet">
+<span id="arcnet-model"></span><h2>Arcnet Model<a class="headerlink" href="#module-face_recognition.models.arcnet" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
-<dt id="models.arcnet.ArcFace">
-<em class="property">class </em><code class="sig-prename descclassname">models.arcnet.</code><code class="sig-name descname">ArcFace</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">config</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/models/arcnet.html#ArcFace"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#models.arcnet.ArcFace" title="Permalink to this definition">¶</a></dt>
+<dt id="face_recognition.models.arcnet.ArcFace">
+<em class="property">class </em><code class="sig-prename descclassname">face_recognition.models.arcnet.</code><code class="sig-name descname">ArcFace</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">config</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/face_recognition/models/arcnet.html#ArcFace"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#face_recognition.models.arcnet.ArcFace" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>Framework: Mxnet
 :param ctx: gpu or cpu
 :param img_size:</p>
 <p>Returns:</p>
 <dl class="py method">
-<dt id="models.arcnet.ArcFace.get_feature">
-<code class="sig-name descname">get_feature</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">aligned</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/models/arcnet.html#ArcFace.get_feature"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#models.arcnet.ArcFace.get_feature" title="Permalink to this definition">¶</a></dt>
+<dt id="face_recognition.models.arcnet.ArcFace.get_feature">
+<code class="sig-name descname">get_feature</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">aligned</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/face_recognition/models/arcnet.html#ArcFace.get_feature"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#face_recognition.models.arcnet.ArcFace.get_feature" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>(</strong><strong>)</strong> (<em>aligned</em>) – </p>
@@ -178,8 +178,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="models.arcnet.ArcFace.get_input_2">
-<code class="sig-name descname">get_input_2</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">face_img</span></em>, <em class="sig-param"><span class="n">bbox</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">points</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/models/arcnet.html#ArcFace.get_input_2"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#models.arcnet.ArcFace.get_input_2" title="Permalink to this definition">¶</a></dt>
+<dt id="face_recognition.models.arcnet.ArcFace.get_input_2">
+<code class="sig-name descname">get_input_2</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">face_img</span></em>, <em class="sig-param"><span class="n">bbox</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">points</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/face_recognition/models/arcnet.html#ArcFace.get_input_2"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#face_recognition.models.arcnet.ArcFace.get_input_2" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -193,34 +193,34 @@
 </dd></dl>
 
 <dl class="py method">
-<dt id="models.arcnet.ArcFace.get_input_3">
-<code class="sig-name descname">get_input_3</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">face_img</span></em>, <em class="sig-param"><span class="n">bbox</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">points</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/models/arcnet.html#ArcFace.get_input_3"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#models.arcnet.ArcFace.get_input_3" title="Permalink to this definition">¶</a></dt>
+<dt id="face_recognition.models.arcnet.ArcFace.get_input_3">
+<code class="sig-name descname">get_input_3</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">face_img</span></em>, <em class="sig-param"><span class="n">bbox</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">points</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/face_recognition/models/arcnet.html#ArcFace.get_input_3"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#face_recognition.models.arcnet.ArcFace.get_input_3" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="models.arcnet.ArcFace.get_model">
-<code class="sig-name descname">get_model</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ctx</span></em>, <em class="sig-param"><span class="n">image_size</span></em>, <em class="sig-param"><span class="n">model_str</span></em>, <em class="sig-param"><span class="n">layer</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/models/arcnet.html#ArcFace.get_model"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#models.arcnet.ArcFace.get_model" title="Permalink to this definition">¶</a></dt>
+<dt id="face_recognition.models.arcnet.ArcFace.get_model">
+<code class="sig-name descname">get_model</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ctx</span></em>, <em class="sig-param"><span class="n">image_size</span></em>, <em class="sig-param"><span class="n">model_str</span></em>, <em class="sig-param"><span class="n">layer</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/face_recognition/models/arcnet.html#ArcFace.get_model"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#face_recognition.models.arcnet.ArcFace.get_model" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get the model</p>
 </dd></dl>
 
 <dl class="py method">
-<dt id="models.arcnet.ArcFace.preprocess">
-<code class="sig-name descname">preprocess</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">img</span></em>, <em class="sig-param"><span class="n">bbox</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">landmark</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/models/arcnet.html#ArcFace.preprocess"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#models.arcnet.ArcFace.preprocess" title="Permalink to this definition">¶</a></dt>
+<dt id="face_recognition.models.arcnet.ArcFace.preprocess">
+<code class="sig-name descname">preprocess</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">img</span></em>, <em class="sig-param"><span class="n">bbox</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">landmark</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/face_recognition/models/arcnet.html#ArcFace.preprocess"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#face_recognition.models.arcnet.ArcFace.preprocess" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="models.arcnet.ArcFace.read_image">
-<code class="sig-name descname">read_image</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">img_path</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/models/arcnet.html#ArcFace.read_image"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#models.arcnet.ArcFace.read_image" title="Permalink to this definition">¶</a></dt>
+<dt id="face_recognition.models.arcnet.ArcFace.read_image">
+<code class="sig-name descname">read_image</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">img_path</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/face_recognition/models/arcnet.html#ArcFace.read_image"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#face_recognition.models.arcnet.ArcFace.read_image" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 </div>
-<div class="section" id="module-models.retina">
-<span id="retina-face-model"></span><h2>Retina Face Model<a class="headerlink" href="#module-models.retina" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-face_recognition.models.retina">
+<span id="retina-face-model"></span><h2>Retina Face Model<a class="headerlink" href="#module-face_recognition.models.retina" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
-<dt id="models.retina.RetinaFace">
-<em class="property">class </em><code class="sig-prename descclassname">models.retina.</code><code class="sig-name descname">RetinaFace</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">config</span></em>, <em class="sig-param"><span class="n">nms</span><span class="o">=</span><span class="default_value">0.4</span></em>, <em class="sig-param"><span class="n">nocrop</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">decay4</span><span class="o">=</span><span class="default_value">0.5</span></em>, <em class="sig-param"><span class="n">vote</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/models/retina.html#RetinaFace"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#models.retina.RetinaFace" title="Permalink to this definition">¶</a></dt>
+<dt id="face_recognition.models.retina.RetinaFace">
+<em class="property">class </em><code class="sig-prename descclassname">face_recognition.models.retina.</code><code class="sig-name descname">RetinaFace</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">config</span></em>, <em class="sig-param"><span class="n">nms</span><span class="o">=</span><span class="default_value">0.4</span></em>, <em class="sig-param"><span class="n">nocrop</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">decay4</span><span class="o">=</span><span class="default_value">0.5</span></em>, <em class="sig-param"><span class="n">vote</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/face_recognition/models/retina.html#RetinaFace"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#face_recognition.models.retina.RetinaFace" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>Retina Face Model</p>
 <dl class="field-list simple">
@@ -237,8 +237,8 @@
 <p class="rubric">Examples</p>
 <p>RetinaFace().detect_fast()</p>
 <dl class="py method">
-<dt id="models.retina.RetinaFace.bbox_pred">
-<em class="property">static </em><code class="sig-name descname">bbox_pred</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">boxes</span></em>, <em class="sig-param"><span class="n">box_deltas</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/models/retina.html#RetinaFace.bbox_pred"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#models.retina.RetinaFace.bbox_pred" title="Permalink to this definition">¶</a></dt>
+<dt id="face_recognition.models.retina.RetinaFace.bbox_pred">
+<em class="property">static </em><code class="sig-name descname">bbox_pred</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">boxes</span></em>, <em class="sig-param"><span class="n">box_deltas</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/face_recognition/models/retina.html#RetinaFace.bbox_pred"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#face_recognition.models.retina.RetinaFace.bbox_pred" title="Permalink to this definition">¶</a></dt>
 <dd><p>Transform the set of class-agnostic boxes into class-specific boxes
 by applying the predicted offsets (box_deltas)
 :param boxes: !important [N 4]
@@ -247,13 +247,13 @@ by applying the predicted offsets (box_deltas)
 </dd></dl>
 
 <dl class="py method">
-<dt id="models.retina.RetinaFace.bbox_vote">
-<code class="sig-name descname">bbox_vote</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">det</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/models/retina.html#RetinaFace.bbox_vote"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#models.retina.RetinaFace.bbox_vote" title="Permalink to this definition">¶</a></dt>
+<dt id="face_recognition.models.retina.RetinaFace.bbox_vote">
+<code class="sig-name descname">bbox_vote</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">det</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/face_recognition/models/retina.html#RetinaFace.bbox_vote"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#face_recognition.models.retina.RetinaFace.bbox_vote" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt id="models.retina.RetinaFace.detect_fast">
-<code class="sig-name descname">detect_fast</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">net_data</span></em>, <em class="sig-param"><span class="n">detect_im_shape</span></em>, <em class="sig-param"><span class="n">threshold</span><span class="o">=</span><span class="default_value">0.5</span></em>, <em class="sig-param"><span class="n">scales</span><span class="o">=</span><span class="default_value">[1.0]</span></em>, <em class="sig-param"><span class="n">do_flip</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/models/retina.html#RetinaFace.detect_fast"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#models.retina.RetinaFace.detect_fast" title="Permalink to this definition">¶</a></dt>
+<dt id="face_recognition.models.retina.RetinaFace.detect_fast">
+<code class="sig-name descname">detect_fast</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">net_data</span></em>, <em class="sig-param"><span class="n">detect_im_shape</span></em>, <em class="sig-param"><span class="n">threshold</span><span class="o">=</span><span class="default_value">0.5</span></em>, <em class="sig-param"><span class="n">scales</span><span class="o">=</span><span class="default_value">[1.0]</span></em>, <em class="sig-param"><span class="n">do_flip</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/face_recognition/models/retina.html#RetinaFace.detect_fast"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#face_recognition.models.retina.RetinaFace.detect_fast" title="Permalink to this definition">¶</a></dt>
 <dd><p>Detect Fast</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -270,8 +270,8 @@ by applying the predicted offsets (box_deltas)
 </dd></dl>
 
 <dl class="py method">
-<dt id="models.retina.RetinaFace.landmark_pred">
-<em class="property">static </em><code class="sig-name descname">landmark_pred</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">boxes</span></em>, <em class="sig-param"><span class="n">landmark_deltas</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/models/retina.html#RetinaFace.landmark_pred"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#models.retina.RetinaFace.landmark_pred" title="Permalink to this definition">¶</a></dt>
+<dt id="face_recognition.models.retina.RetinaFace.landmark_pred">
+<em class="property">static </em><code class="sig-name descname">landmark_pred</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">boxes</span></em>, <em class="sig-param"><span class="n">landmark_deltas</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/face_recognition/models/retina.html#RetinaFace.landmark_pred"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#face_recognition.models.retina.RetinaFace.landmark_pred" title="Permalink to this definition">¶</a></dt>
 <dd><p>Landmark prediction</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
