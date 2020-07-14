@@ -1,0 +1,346 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Face Recognition Library &mdash; Face Recognition 0.1.6 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="License Plate Library" href="license_recog.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Face Recognition
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Package Reference</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="license_recog.html">License Plate Library</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Face Recognition Library</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-models.arcnet">Arcnet Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-models.retina">Retina Face Model</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Face Recognition</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Face Recognition Library</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/pkg/face_recognition.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="face-recognition-library">
+<h1>Face Recognition Library<a class="headerlink" href="#face-recognition-library" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-models.arcnet">
+<span id="arcnet-model"></span><h2>Arcnet Model<a class="headerlink" href="#module-models.arcnet" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="models.arcnet.ArcFace">
+<em class="property">class </em><code class="sig-prename descclassname">models.arcnet.</code><code class="sig-name descname">ArcFace</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">config</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/models/arcnet.html#ArcFace"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#models.arcnet.ArcFace" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Framework: Mxnet
+:param ctx: gpu or cpu
+:param img_size:</p>
+<p>Returns:</p>
+<dl class="py method">
+<dt id="models.arcnet.ArcFace.get_feature">
+<code class="sig-name descname">get_feature</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">aligned</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/models/arcnet.html#ArcFace.get_feature"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#models.arcnet.ArcFace.get_feature" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>(</strong><strong>)</strong> (<em>aligned</em>) – </p>
+</dd>
+</dl>
+<p>Returns:</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="models.arcnet.ArcFace.get_input_2">
+<code class="sig-name descname">get_input_2</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">face_img</span></em>, <em class="sig-param"><span class="n">bbox</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">points</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/models/arcnet.html#ArcFace.get_input_2"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#models.arcnet.ArcFace.get_input_2" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>(</strong><strong>)</strong> (<em>points</em>) – </p></li>
+<li><p><strong>(</strong><strong>)</strong> – </p></li>
+<li><p><strong>(</strong><strong>)</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+<p>Returns:</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="models.arcnet.ArcFace.get_input_3">
+<code class="sig-name descname">get_input_3</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">face_img</span></em>, <em class="sig-param"><span class="n">bbox</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">points</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/models/arcnet.html#ArcFace.get_input_3"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#models.arcnet.ArcFace.get_input_3" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="models.arcnet.ArcFace.get_model">
+<code class="sig-name descname">get_model</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ctx</span></em>, <em class="sig-param"><span class="n">image_size</span></em>, <em class="sig-param"><span class="n">model_str</span></em>, <em class="sig-param"><span class="n">layer</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/models/arcnet.html#ArcFace.get_model"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#models.arcnet.ArcFace.get_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the model</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="models.arcnet.ArcFace.preprocess">
+<code class="sig-name descname">preprocess</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">img</span></em>, <em class="sig-param"><span class="n">bbox</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">landmark</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/models/arcnet.html#ArcFace.preprocess"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#models.arcnet.ArcFace.preprocess" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="models.arcnet.ArcFace.read_image">
+<code class="sig-name descname">read_image</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">img_path</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/models/arcnet.html#ArcFace.read_image"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#models.arcnet.ArcFace.read_image" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-models.retina">
+<span id="retina-face-model"></span><h2>Retina Face Model<a class="headerlink" href="#module-models.retina" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="models.retina.RetinaFace">
+<em class="property">class </em><code class="sig-prename descclassname">models.retina.</code><code class="sig-name descname">RetinaFace</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">config</span></em>, <em class="sig-param"><span class="n">nms</span><span class="o">=</span><span class="default_value">0.4</span></em>, <em class="sig-param"><span class="n">nocrop</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">decay4</span><span class="o">=</span><span class="default_value">0.5</span></em>, <em class="sig-param"><span class="n">vote</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/models/retina.html#RetinaFace"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#models.retina.RetinaFace" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Retina Face Model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>config</strong> (<em>config</em>) – </p></li>
+<li><p><strong>nms</strong> (<em>float</em>) – Defaults to 0.4.</p></li>
+<li><p><strong>nocrop</strong> (<em>bool</em>) – Defaults to False.</p></li>
+<li><p><strong>decay4</strong> (<em>float</em>) – Defaults to 0.5.</p></li>
+<li><p><strong>vote</strong> (<em>bool</em>) – Defaults to False.</p></li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<p>RetinaFace().detect_fast()</p>
+<dl class="py method">
+<dt id="models.retina.RetinaFace.bbox_pred">
+<em class="property">static </em><code class="sig-name descname">bbox_pred</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">boxes</span></em>, <em class="sig-param"><span class="n">box_deltas</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/models/retina.html#RetinaFace.bbox_pred"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#models.retina.RetinaFace.bbox_pred" title="Permalink to this definition">¶</a></dt>
+<dd><p>Transform the set of class-agnostic boxes into class-specific boxes
+by applying the predicted offsets (box_deltas)
+:param boxes: !important [N 4]
+:param box_deltas: [N, 4 * num_classes]
+:return: [N 4 * num_classes]</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="models.retina.RetinaFace.bbox_vote">
+<code class="sig-name descname">bbox_vote</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">det</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/models/retina.html#RetinaFace.bbox_vote"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#models.retina.RetinaFace.bbox_vote" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="models.retina.RetinaFace.detect_fast">
+<code class="sig-name descname">detect_fast</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">net_data</span></em>, <em class="sig-param"><span class="n">detect_im_shape</span></em>, <em class="sig-param"><span class="n">threshold</span><span class="o">=</span><span class="default_value">0.5</span></em>, <em class="sig-param"><span class="n">scales</span><span class="o">=</span><span class="default_value">[1.0]</span></em>, <em class="sig-param"><span class="n">do_flip</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/models/retina.html#RetinaFace.detect_fast"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#models.retina.RetinaFace.detect_fast" title="Permalink to this definition">¶</a></dt>
+<dd><p>Detect Fast</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>(</strong><strong>)</strong> (<em>do_flip</em>) – </p></li>
+<li><p><strong>(</strong><strong>)</strong> – </p></li>
+<li><p><strong>(</strong><strong>)</strong> – </p></li>
+<li><p><strong>(</strong><strong>)</strong> – </p></li>
+<li><p><strong>(</strong><strong>)</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+<p>Returns:</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="models.retina.RetinaFace.landmark_pred">
+<em class="property">static </em><code class="sig-name descname">landmark_pred</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">boxes</span></em>, <em class="sig-param"><span class="n">landmark_deltas</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/models/retina.html#RetinaFace.landmark_pred"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#models.retina.RetinaFace.landmark_pred" title="Permalink to this definition">¶</a></dt>
+<dd><p>Landmark prediction</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>(</strong><strong>)</strong> (<em>landmark_deltas</em>) – </p></li>
+<li><p><strong>(</strong><strong>)</strong> – </p></li>
+</ul>
+</dd>
+</dl>
+<p>Returns:</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="license_recog.html" class="btn btn-neutral float-left" title="License Plate Library" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Hung Le Viet
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

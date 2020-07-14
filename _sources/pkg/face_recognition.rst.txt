@@ -1,0 +1,19 @@
+Face Recognition Library
+========================
+
+Arcnet Model
+--------------------
+
+.. automodule:: models.arcnet
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Retina Face Model
+--------------------
+
+.. automodule:: models.retina
+   :members:
+   :undoc-members:
+   :show-inheritance:
+

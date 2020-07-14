@@ -1,0 +1,12 @@
+License Plate Library
+======================
+
+
+license\_recog.detector module
+------------------------------
+
+.. automodule:: license_recog.detector
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
