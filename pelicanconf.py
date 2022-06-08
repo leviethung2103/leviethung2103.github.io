@@ -4,11 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Hung Le Viet'
 SITENAME = 'Hung Le Viet'
-SITEURL = 'https://leviethung1280.github.io'
-DOMAIN = SITEURL
-FEED_DOMAIN = SITEURL
-HTTPS = True
-
+SITEURL = 'http://localhost:8000'
 SITESUBTITLE = "AI Engineer"
 SITEDESCRIPTION = "AI and Technology"
 FAVICON = SITEURL + '/images/favicon-16x16.png'
@@ -75,10 +71,20 @@ SITEMAP = {
     }
 }
 
+# Blogroll
+# LINKS = (('Pelican', 'http://getpelican.com/'),
+#          ('Python.org', 'http://python.org/'),
+#          ('Jinja2', 'http://jinja.pocoo.org/'),
+#          ('You can modify those links in your config file', '#'),)
+
+# Social widget
+# SOCIAL = (('You can add links in your config file', '#'),
+#           ('Another social link', '#'),)
+
 DEFAULT_PAGINATION = 10
 
 THEME="themes/Flex"
-PLUGIN_PATHS = ['pelican-plugins']
+PLUGIN_PATHS = ['./pelican-plugins']
 PLUGINS= ['assets','sitemap','gravatar','post_stats','feed_summary']
 
 
