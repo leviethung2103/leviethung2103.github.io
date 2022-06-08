@@ -4,84 +4,84 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitem
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>https://leviethung1280.github.io/</loc>
-<lastmod>2022-06-08T23:20:43-00:00</lastmod>
+<loc>/</loc>
+<lastmod>2022-06-08T23:28:44-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>https://leviethung1280.github.io/tags.html</loc>
-<lastmod>2022-06-08T23:20:43-00:00</lastmod>
+<loc>/tags.html</loc>
+<lastmod>2022-06-08T23:28:44-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>https://leviethung1280.github.io/categories.html</loc>
-<lastmod>2022-06-08T23:20:43-00:00</lastmod>
+<loc>/categories.html</loc>
+<lastmod>2022-06-08T23:28:44-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>https://leviethung1280.github.io/authors.html</loc>
-<lastmod>2022-06-08T23:20:43-00:00</lastmod>
+<loc>/authors.html</loc>
+<lastmod>2022-06-08T23:28:44-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>https://leviethung1280.github.io/archives.html</loc>
-<lastmod>2022-06-08T23:20:43-00:00</lastmod>
+<loc>/archives.html</loc>
+<lastmod>2022-06-08T23:28:44-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>https://leviethung1280.github.io/about/</loc>
+<loc>/about/</loc>
 <lastmod>2022-06-08T00:00:00+07:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://leviethung1280.github.io/contact/</loc>
+<loc>/contact/</loc>
 <lastmod>2022-06-08T00:00:00+07:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://leviethung1280.github.io/2022/06/first-article/</loc>
+<loc>/2022/06/first-article/</loc>
 <lastmod>2022-06-08T00:00:00+07:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>https://leviethung1280.github.io/category/blog.html</loc>
+<loc>/category/blog.html</loc>
 <lastmod>2022-06-08T00:00:00+07:07</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>https://leviethung1280.github.io/tag/pelican.html</loc>
+<loc>/tag/pelican.html</loc>
 <lastmod>2022-06-08T00:00:00+07:07</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>https://leviethung1280.github.io/tag/markdown.html</loc>
+<loc>/tag/markdown.html</loc>
 <lastmod>2022-06-08T00:00:00+07:07</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
-<loc>https://leviethung1280.github.io/author/hung-le-vie.html</loc>
+<loc>/author/hung-le-vie.html</loc>
 <lastmod>2022-06-08T00:00:00+07:07</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.6</priority>
