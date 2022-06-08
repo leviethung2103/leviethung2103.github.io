@@ -1,3 +1,23 @@
+## Publish
+```
+# at the root directory
+git checkout source -> update articles 
+pelican -s publishconf.py
+cd output
+python -m http.server 8000
+ghp-import -m 'update blog' -b master 'output'
+git push origin master 
+```
+
+Currently, I cannot use the fab 
+## Dev Local 
+```
+# generate the output folder 
+pelican -s pelicanconf.py | make html
+make server 
+```
+
+
 # Personal Blog [![Build Status](https://travis-ci.org/ayushkumarshah/ayushkumarshah.github.io.svg?branch=source)](https://travis-ci.org/ayushkumarshah/ayushkumarshah.github.io)
 
 This repository hosts the code for my personal [blog](https://shahayush.com).
