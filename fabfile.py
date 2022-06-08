@@ -12,6 +12,10 @@ from pelican.server import ComplexHTTPRequestHandler
 # Local path configuration (can be absolute or relative to fabfile)
 env.deploy_path = 'output'
 DEPLOY_PATH = env.deploy_path
+env.msg = "update blog" # commit message
+
+# Github Pages configuration
+env.github_pages_branch = "master"
 
 # Remote server configuration
 production = 'root@localhost:22'
@@ -22,11 +26,19 @@ env.cloudfiles_username = 'my_rackspace_username'
 env.cloudfiles_api_key = 'my_rackspace_api_key'
 env.cloudfiles_container = 'my_cloudfiles_container'
 
-# Github Pages configuration
-env.github_pages_branch = "master"
+
 
 # Port for `serve`
+SERVER = '127.0.0.1'
 PORT = 8000
+
+def deploy():
+    """Push to GitHub pages"""
+    env.msg = "Build site"
+    clean()
+    preview()
+    local("ghp-import -m '{msg}' -b {github_pages_branch} {deploy_path}".format(**env))
+    local("git push origin {github_pages_branch}".format(**env))
 
 def clean():
     """Remove generated files"""
