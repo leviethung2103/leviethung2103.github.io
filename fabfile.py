@@ -3,8 +3,9 @@ import fabric.contrib.project as project
 import os
 import shutil
 import sys
-# import SocketServer
-import SocketServer as socketserver
+import SocketServer
+# import socketserver
+# import SocketServer as socketserver
 
 
 from pelican.server import ComplexHTTPRequestHandler
