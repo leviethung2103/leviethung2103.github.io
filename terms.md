@@ -17,4 +17,4 @@ By using our Canva integration or related services, you agree to the following t
 4. **Updates**  
    These terms may be updated periodically. Continued use of the service means you accept the new terms.
 
-For any questions, please contact: [support@leviethung.dev](mailto:support@leviethung.dev)
+For any questions, please contact: [leviethung1280@gmail.com](mailto:leviethung1280@gmail.com)
